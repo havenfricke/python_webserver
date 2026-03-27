@@ -6,8 +6,9 @@
 - `cd python_webserver`
 - `code .`
 - Open the terminal in VS Code
-- `python3 -m venv server_env`
-- `pip install fastapi`
-- `pip install uvicorn`
-- `pip install dotenv`
-- Create a new file in the root 
+- Run `python3 -m venv server_env` to create a python virtual environment
+- Run `pip install fastapi` to install [FastAPI](https://fastapi.tiangolo.com/)
+- Run `pip install uvicorn` to install [Uvicorn](https://uvicorn.dev/)
+- Run `pip install dotenv` to install [dotenv](https://pypi.org/project/python-dotenv/)
+- Switch Interpreters using VS Code shortcut: CTRL + SHIFT + P, type "python: select interpreter"
+- Select the interpreter inside the server_env folder create using `python3 -m venv server_env` (You will get import errors if you do not)
