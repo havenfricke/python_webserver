@@ -12,3 +12,5 @@
 - Run `pip install dotenv` to install [dotenv](https://pypi.org/project/python-dotenv/)
 - Switch Interpreters using VS Code shortcut: CTRL + SHIFT + P, type "python: select interpreter"
 - Select the interpreter inside the server_env folder create using `python3 -m venv server_env` (You will get import errors if you do not)
+
+
