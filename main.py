@@ -18,7 +18,7 @@ load_dotenv()
 
 node_env = os.getenv("NODE_ENV", "prod")
 port = int(os.getenv("LISTENING_PORT", 8000))
-host = "127.0.0.1" if node_env == "prod" else "0.0.0.0"
+host = os.getenv("HOST", "127.0.0.1")
 
 app = FastAPI()
 
