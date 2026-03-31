@@ -11,9 +11,9 @@
 - Run `pip install uvicorn` to install [Uvicorn](https://uvicorn.dev/)
 - Run `pip install dotenv` to install [dotenv](https://pypi.org/project/python-dotenv/)
 - Run `pip install sqlalchemy` to install [SQLAlchemy](https://www.sqlalchemy.org/)
-- Run `pip install pymysql` to installed [pysql](https://pypi.org/project/pysql/)
+- Run `pip install pymysql` to install [pysql](https://pypi.org/project/pysql/)
 - Switch Interpreters using VS Code shortcut: CTRL + SHIFT + P, type "python: select interpreter"
-- Select the interpreter inside the server_env folder create using `python3 -m venv server_env` (You will get import errors if you do not)
+- Select the interpreter inside the server_env folder created using `python3 -m venv server_env` (You will get import errors if you do not)
 
 - After environment set-up and package installations are complete, run `python main.py` from the root directory to start the server.
 
