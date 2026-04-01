@@ -5,7 +5,7 @@ class ExampleRepository:
         pass
 
     async def create_example(self, body: dict):
-        create = "INSERT INTO examples (name, desc) VALUES (:name, :desc)"
+        create = "INSERT INTO examples (name, description) VALUES (:name, :description)"
         res = await query(create, body)
         created_id = res["inserted_id"]
         select = "SELECT * FROM examples WHERE id = :id"
@@ -26,7 +26,7 @@ class ExampleRepository:
     
 
     async def edit_example(self, id: int, body: dict):
-        edit = "UPDATE examples SET name = :name, desc = :desc WHERE id = :id"
+        edit = "UPDATE examples SET name = :name, description = :description WHERE id = :id"
         new_body = {
             "id": id,
             **body   # unpack the body into params w id

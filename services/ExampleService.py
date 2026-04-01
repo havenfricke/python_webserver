@@ -5,12 +5,12 @@ class ExampleService:
 
     async def create_example(self, body: dict) -> Example:
         created = await example_repo.create_example(body)
-        return Example(created.id, created.name, created.desc, created.created_at)
+        return Example(created.id, created.name, created.description, created.created_at)
     
 
     async def get_all_examples(self) -> list[Example]:
         examples = await example_repo.get_all_examples()
-        return [Example(prop.id, prop.name, prop.desc, prop.created_at) for prop in examples]
+        return [Example(prop.id, prop.name, prop.description, prop.created_at) for prop in examples]
     
 
     async def get_example_by_id(self, id: int) -> Example:
@@ -19,7 +19,7 @@ class ExampleService:
         if not example:
             raise ValueError("404: Example not found")
         
-        return Example(example.id, example.name, example.desc, example.created_at)
+        return Example(example.id, example.name, example.description, example.created_at)
     
 
     async def edit_example(self, id: int, update: dict) -> Example:
@@ -30,12 +30,12 @@ class ExampleService:
         
         updated = {
             "name": original.name if update.get("name") == original.name else update.get("name"),
-            "desc": original.desc if update.get("desc") == original.desc else update.get("desc")
+            "description": original.description if update.get("description") == original.description else update.get("description")
             # Other props here if model allows
         }
 
         updated = await example_repo.edit_example(original.id, updated)
-        return Example(updated.id, updated.name, updated.desc, updated.created_at)
+        return Example(updated.id, updated.name, updated.description, updated.created_at)
     
 
     async def delete_example(self, id: int) -> dict:

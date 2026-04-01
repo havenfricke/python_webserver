@@ -3,5 +3,5 @@ class Example:
         self.id = id
         # self.creator_id = creator_id Add this when auth is integrated
         self.name = name
-        self.desc = desc
+        self.description = desc
         self.created_at = created_at
