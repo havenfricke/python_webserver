@@ -1,6 +1,6 @@
 ### Getting Started
 
-- Get the latest version of python [here](https://www.python.org/downloads/)
+- Get the latest version of python [here](https://www.python.org/downloads/) if you are on Windows.
 - pip is included with the latest version of Python
 - `git clone https://github.com/havenfricke/python_webserver.git`
 - `cd python_webserver`
@@ -16,6 +16,8 @@
 - Run `pip install sqlalchemy` to install [SQLAlchemy](https://www.sqlalchemy.org/)
 - Run `pip install aiomysql` to install [aiomysql](https://pypi.org/project/aiomysql/) (for SQLAlchemy to un async operations)
 - Run `pip install pymysql` to install [pysql](https://pypi.org/project/pysql/)
+
+*If you are on Windows the below steps are necessary*
 - Switch Interpreters using VS Code shortcut: CTRL + SHIFT + P, type "python: select interpreter"
 - Select the interpreter inside the server_env folder created using `python3 -m venv server_env` (You will get import errors if you do not)
 
