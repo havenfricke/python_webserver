@@ -12,7 +12,9 @@
 - Run `pip install fastapi` to install [FastAPI](https://fastapi.tiangolo.com/)
 - Run `pip install uvicorn` to install [Uvicorn](https://uvicorn.dev/)
 - Run `pip install dotenv` to install [dotenv](https://pypi.org/project/python-dotenv/)
+- Run `pip install cryptography` to install [cryptography](https://pypi/project/cryptography/) (for dotenv)
 - Run `pip install sqlalchemy` to install [SQLAlchemy](https://www.sqlalchemy.org/)
+Run `pip install aiomysql` to install [aiomysql](https://pypi.org/project/aiomysql/) (for SQLAlchemy to un async operations)
 - Run `pip install pymysql` to install [pysql](https://pypi.org/project/pysql/)
 - Switch Interpreters using VS Code shortcut: CTRL + SHIFT + P, type "python: select interpreter"
 - Select the interpreter inside the server_env folder created using `python3 -m venv server_env` (You will get import errors if you do not)
